@@ -1,0 +1,60 @@
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+.modal-card-head {
+  border-bottom: none;
+  background-color: #ffffff !important;
+  padding: 8px;
+}
+.modal-card-foot {
+  border-top: none;
+  background-color: #ffffff !important;
+}
+.is-color {
+  color: #FFFFFF !important;
+  background-color: #e67e22 !important;
+}
+.scroll {
+	overflow: hidden;
+}
+.l-h-12 {
+	line-height: 12px !important;
+}
+.w-365 {
+	width: 365px !important;
+}
+.w-280 {
+	width: 280px !important;
+}
+._m-l-200 {
+	margin-left: -200px !important;
+}
+._m-l-182 {
+	margin-left: -182px !important;
+}
+._m-l-16 {
+	margin-left: -16px !important;
+}
+._m-l-21 {
+	margin-left: -21px !important;
+}
+.p-l-325 {
+  padding-left: 325px !important;
+}
+input[type=checkbox].checkbox-login{
+    vertical-align: middle;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="image/web-logo-thumbnails.png">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/bulma-checkbox.min.css">
+
+    <!-- universal css -->
+
+ 
+    <!-- account use this css -->
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-a456c.appspot.com/o/login.css?alt=media&token=122f81c2-3043-4543-af57-1586bc480963">
+    <!-- account use this css -->
+  </head>
+  <body>
+
+
+    <!--/login-->
+    <section class="section m-t-48">
+      <div class="container">
+
+        <!--card-->
+        <div class="modal is-active l-h-12">
+          <div class="modal-background"></div>
+          <div class="modal-card w-365">
+            <header class="modal-card-head p-l-325">
+              <button class="delete is-medium m-l-10" aria-label="close"></button>
+            </header>
+            <header class="modal-card-head is-radiusless">
+              <p class="modal-card-title has-text-centered has-text-grey is-size-6 p-l-30 p-r-30 has-text-weight-normal">
+                Sign in With
+              </p>
+            </header>
+            <section class="modal-card-body scroll">
+              <div class="buttons is-centered">
+                <p class="control">
+                  <a href="#" class="button">
+                    <span class="icon is-medium">
+                      <img src="https://image.flaticon.com/icons/svg/281/281764.svg">
+                    </span>
+                    <span class="m-l-10">Google</span>
+                  </a>
+                </p>
+                <p class="control m-l-10">
+                  <a href="#" class="button">
+                    <span class="icon is-medium">
+                      <img src="https://image.flaticon.com/icons/svg/174/174848.svg">
+                    </span>
+                    <span class="m-l-10">Facebook</span>
+                  </a>
+                </p>
+              </div><!--/buttons-->
+
+              <div class="hr-sect is-size-7 is-orange p-r-20 p-l-20">Or sign in with credentials</div>
+
+              <!-- Content ... -->
+             <!--Login Form-->
+             <form class="p-t-20 p-r-20 p-b-20 p-l-20" method="POST" action="">
+               <div class="control">
+                 <label class="label is-size-7 has-text-weight-normal">Email</label>
+                 <div class="control has-icons-left has-icons-right">
+                  <input class="input " type="email" placeholder="Email" name="email" value="">
+                 <span class="icon is-small is-left">
+                   <i class="fas fa-envelope"></i>
+                 </span>
+                 <span>
+                   <strong class="help is-danger"></strong>
+                 </span>
+               </div><!--/control has-icons-->
+             </div><!--/control-->
+
+             <div class="control">
+               <label class="label is-size-7 has-text-weight-normal">Password</label>
+               <p class="control has-icons-left has-icons-right">
+                 <input class="input " type="password" placeholder="Password" name="password" value="">
+                 <span class="icon is-small is-left">
+                   <i class="fas fa-lock"></i>
+                 </span>
+                 <span>
+                   <strong class="help is-danger"></strong>
+                 </span>
+               </p>
+             </div><!--/control-->
+
+             <div class="field m-t-12">
+               <input class="checkbox-login" type="checkbox" name="remember"> <span class="is-size-7">Remember Me</span>
+               <span class="is-pulled-right">
+                 <a href="#" class="is-pulled-right is-size-7 has-text-grey">Forgot Password?</a>
+               </span>
+             </div><!--/field-->
+             <p class="title has-text-centered">
+               <button id="login-form" type="submit" class="button is-color has-text-centered is-fullwidth">Sign In</button>
+             </p>
+
+         </form>
+        <!--Login Form-->
+
+      </section>
+      <footer class="modal-card-foot">
+        <p class="has-text-centered is-size-7 m-l-90">Don't have an account ?
+          <a href="#" class="has-text-grey">Register</a>.
+        </p>
+      </footer>
+    </div><!--/modal-card-->
+  </div><!--/modal-->
+  <!--card-->
+</div><!-- Container -->
+</section><!--/section-->
+<!--/login-->
+
+
+  </body>
+</html>
