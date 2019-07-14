@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="image/web-logo-thumbnails.png">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- universal css -->
+
+ 
+    <!-- account use this css -->
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-a456c.appspot.com/o/orders.css?alt=media&token=9afda7f9-5488-44b3-89f5-c35d20ec2625">
+    <!-- account use this css -->
+  </head>
+  <body>
+
+    <!--/NAVBAR-->
+    <nav class="navbar is-dark is-fixed-top is-unselectable" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-hidden-touch" href="https://bulma.io">
+            <img src="image/zookawatersports.png" alt="logo zooka">
+          </a>
+          <a class="navbar-item is-hidden-desktop" href="#">
+            <img src="image/zooka-thumbnails-light.png" alt="logo zooka">
+          </a>
+ 
+          <div class="navbar-bell burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="3">
+                <i class="fas fa-lg fa-bell"></i>
+              </span>
+            </a>
+          </div><!--/navbar-bell-->
+          <div class="navbar-cart burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="4">
+                <i class="fas fa-lg fa-shopping-cart"></i>
+              </span>
+            </a>
+          </div><!--/navbar-cart-->
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="zooka-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div><!--/navbar-brand-->
+ 
+        <div id="zooka-navbar" class="navbar-menu">
+          <div class="navbar-end p-t-0 p-b-0">
+            <a class="navbar-item" href="">
+              Home
+            </a>
+            <a class="navbar-item" href="">
+              All Activities
+            </a>
+            <a class="navbar-item" href="">
+              Blog
+            </a>
+ 
+            <!--/cart-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="3">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </a>
+ 
+              <div class="navbar-dropdown is-right is-boxed w-250">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top">
+                  Total: 0 Items
+                </div><!--/navbar-dropdown is-right is-boxed-->
+                <hr class="navbar-divider">
+                <div class="dropdown-content navbar-item is-radiusless is-shadowless is-clipped">
+                  <article class="media">
+                    <figure class="media-content">
+                      <p class="image m-l-10 m-t-10 m-r-10 m-b-10">
+                        <img class="img-fit w-full dis-block max-h-240 m-l-r-auto" src="image/zooka-empty.png">
+                      </p>
+                    </figure>
+                  </article>
+                </div><!--/dropdown-content-->
+ 
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/cart-->
+ 
+            <!--/notification-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="4">
+                  <i class="fas fa-bell"></i>
+                </span>
+              </a>
+              <div class="navbar-dropdown is-right is-boxed w-365">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top dis-inline">
+                  <span>Notification</span>
+                  <a class="tandai is-pulled-right">Tandai semua &nbsp;&nbsp;</a>
+                </div>
+                <hr class="navbar-divider">
+                <div class="has-text-centered">
+                  <p class="title has-text-grey-light p-t-20">
+                    <i class="fal fa-bells fa-2x"></i>
+                  </p>
+                  <p class="subtitle has-text-grey-light p-t-10 p-b-20">No Notification</p>
+                </div><!--/has-text-centered-->
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/notification-->
+
+            <!--/account-->
+            <div class="navbar-item has-dropdown is-right is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <i class="fas fa-lg fa-user"></i>
+              </a>
+              <div class="navbar-dropdown is-right is-boxed">
+                <a href="#" class="navbar-item">Login</a>
+                <a href="#" class="navbar-item">Register</a>
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/account-->
+
+          </div><!--/navbar-end-->
+        </div><!--/navbar-menu-->
+      </div><!--/container-->  
+    </nav>
+    <!--/NAVBAR-->
+
+    <!--/ACCOUNT-->
+    <section class="section m-t-48 is-whitesmoke">
+      <div class="container">
+        <div class="columns">
+
+
+          <aside class="menu is-fullheight is-clipped column is-2 is-narrow-mobile is-whitesmoke">
+
+              <div class="box is-paddingless is-shadowless is-transparent _m-b-8">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                    </figure>
+                  </div><!--/media-left-->
+                  <div class="media-content">
+                    <div class="content m-t-10">
+                      <p class="fs-13 p-t-12">
+                        <strong>John Smith</strong> 
+                      </p>
+                    </div><!--/content-->
+                  </div><!--/media-content-->
+                </article>
+              </div><!--/box--> 
+              <hr class="color-hr">    
+
+            <ul class="menu-list">
+              <li>
+                <a href="">
+                  <span class="icon has-text-info">
+                    <i class="fas fa-user-circle fa-orange"></i>
+                  </span>
+                  <span class="has-text-grey is-capitalized"> My Account </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon has-text-info">
+                    <i class="fas fa-cart-arrow-down"></i>
+                  </span>
+                  <span class="has-text-grey is-capitalized"> Orders </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon has-text-info">
+                    <i class="fas fa-comment-dots"></i>
+                  </span>
+                  <span class="has-text-grey is-capitalized"> Review </span>
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+
+
+          <!-- SHOW-ORDERS -->
+          <div class="columns container">
+            <div class="column">
+              <!-- TABS -->
+              <div class="box is-shadowless is-paddingless">
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <div class="tabs">
+                        <ul class="m-t-0">
+                          <li class="is-active m-r-50"><a>Waiting for payment</a></li>
+                          <li class="m-r-50"><a>Order Complete</a></li>
+                          <li class=""><a>Order Canceled</a></li>
+                        </ul>
+                      </div><!--/tabs-->
+                    </div><!--/content-->
+                  </div><!--/media-content-->
+                </article>
+              </div><!--/box-->
+              <!-- TABS -->
+
+              <!--LIST ITEM-->
+              <article class="message is-radiusless">
+                <div class="message-header is-radiusless">
+
+                  <div class="field m-b-0">
+                    <i class="far fa-shopping-bag fa-lg m-r-4"></i>
+                    <strong class="is-size-6 is-size-7-mobile">Shopping</strong>  <span class="tag is-orange is-normal is-rounded is-size-7 is-size-7-mobile">Onsite Payment</span>
+                  </div>
+                  <a class="delorder is-pulled-right is-size-6 is-size-7-mobile text-decor is-hidden-mobile">Cancel Transaction</a>
+                  <a class="delorder is-pulled-right is-size-6 is-size-7-mobile text-decor is-hidden-desktop">Cancel</a>
+                </div>
+
+                <div class="message-body p-t-0 p-l-1 p-r-1 p-b-0">
+                  <div class="box is-radiusless is-clipped m-b-0">
+                    <article class="media">
+                      <div class="media-content is-clipped">
+                        <div class="media-content">
+                        </div><!--/header-cart-content-->
+
+                        <div class="columns">
+                          <div class="column is-7">
+                            <div class="content p-l-40 is-size-7-mobile">
+                            Total : IDR 140.000 | Remaining : IDR. 0 | Purchase date <strong>17 June 2019</strong>
+                          <div class="box is-radiusless m-t-10 m-b-10 p-t-12 p-r-12 p-b-12 p-l-12 is-whitesmoke">
+                            <i class="fal fa-lightbulb-exclamation m-r-10 m-l-10"></i>
+                            <strong class="has-text-danger is-size-7-mobile">Pay at Zooka : IDR 140.000</strong>
+                          </div>
+                          <p>Transportation : <b>Orders</b></p>
+                          <p class="m-b-4 m-t-4">Payment Method  : <b>Onsite Payment</b></p>
+                            <p>Nomor Virtual Account  : <b>order number</b></p>
+                            </div><!--/content-->
+                          </div><!--/column-->
+                          <div class="column is-3">
+                            <div class="content">
+                              <center>
+                              <figure class="image is-128x128 m-b-10">
+                                <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                              </figure>
+                              <a class="button is-fullwidth">Cara Pembayaran</a>
+                              <a class="show-detail button is-fullwidth m-t-10" data-more="">Show detail</a>
+                              </center>
+                            </div><!--/content-->
+                          </div><!--/column-->
+                        </div><!--/columns-->
+                      </div><!--/media-content-->
+                    </article>
+                  </div><!--/box-->
+
+                  <div class="is-hidden box is-radiusless is-clipped m-b-0">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-128x128">
+                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                        </figure>
+                      </div>
+                      <div class="media-content is-clipped">
+                        <div class="header-cart-content">
+                          <strong class="is-size-5 is-size-7-mobile">Jet Ski</strong>
+                        </div><!--/header-cart-content-->
+                        <hr class="cart-content">
+
+                        <div class="columns">
+                          <div class="column">
+                            <div class="content">
+                              <p class="subtitle is-size-6 m-b-0 is-size-7-mobile">Booking date: <span class="is-size-7-mobile">15 Juni 2019</span></p>
+                              <p class="subtitle is-size-6 m-b-0 is-size-7-mobile">Booking time: <span class="is-size-7-mobile">14.00 WITA</span></p>
+                              <p class="subtitle is-size-6 is-size-7-mobile">Price: <span class="is-size-7-mobile">IDR. 200.000</span></p>
+                            </div><!--/content-->
+                          </div><!--/column-->
+                          <div class="column">
+                            <div class="content">
+                              <p class="subtitle is-size-6 m-b-0 has-text-weight-semibold is-size-7-mobile">Person: </p>
+                              <p class="m-l-14 is-size-7-mobile">2</p>
+                            </div><!--/content-->
+                          </div><!--/column-->
+                          <div class="column">
+                            <div class="content">
+                              <p class="subtitle is-size-6 m-b-0 has-text-weight-semibold is-size-7-mobile">Total: </p>
+                              <p class="subtitle is-size-6 has-text-weight-bold is-size-7-mobile">IDR. 200.000</p>
+                            </div><!--/content-->
+                          </div><!--/column-->
+                        </div><!--/columns-->
+                      </div><!--/media-content-->
+                    </article>
+                  </div><!--/box-->
+
+                </div><!--/message-body-->
+              </article>
+              <!--LIST ITEM-->
+
+            </div><!--/column-->
+          </div><!--/columns container-->
+          <!-- SHOW-ORDERS -->      
+
+        </div><!--/columns-->
+      </div><!-- Container -->
+    </section><!--/section-->
+    <!--/ACCOUNT-->
+
+
+    <!--/FOOTER-->
+    <footer class="footer has-background-grey-darker p-t-24 p-b-24 is-hidden-desktop is-unselectable">
+      <div class="container">
+        <div class="content m-l-24 m-r-24 m-t-0">
+          <div class="columns has-text-white m-t-0">
+            
+            <div class="column is-4">
+              <p class="m-b-0">
+                <img class="img-fit w-150" src="image/footer-logo.png" alt="logo zooka">
+              </p>
+              <p class="has-text-grey-lighter"><b>Since 2010 · </b>We are commited to providing dive and watersports in Tanjung, Bali. We focus on the best experience for our customers.</p>
+            </div><!--/column-->
+ 
+            <div class="column is-4">
+              <p class="is-size-4 m-b-0">
+                NEWS
+              </p>
+              <p class="bd-footer-link margin-about m-b-0">
+                <a href="#" class="has-text-grey-lighter">
+                  How it works
+                </a>
+              </p>
+              <p class="bd-footer-link">
+                <a href="{{url('/blog')}}" class="has-text-grey-lighter">
+                  Blog
+                </a>
+              </p>
+            </div><!--/column-->
+            
+            <div class="column is-4">
+              <p class="is-size-4 m-b-0">
+                INFORMATION
+              </p>
+              <p class="bd-footer-link margin-about m-b-0">
+                <a href="{{url('/#about-us')}}" class="has-text-grey-lighter">
+                  About us
+                </a>
+              </p>
+              <p class="bd-footer-link m-b-0">
+                <a href="#" class="has-text-grey-lighter">
+                  Term and conditions
+                </a>
+              </p>
+              <p class="bd-footer-link">
+                <a href="#" class="has-text-grey-lighter">
+                  Privacy policy
+                </a>
+              </p>
+            </div><!--/column-->
+ 
+            <div class="column is-4">
+              <p class="is-size-4 m-b-0">
+                SUBSCRIBE NOW
+              </p>
+              <p class="bd-footer-link margin-about">
+                <a href="#" class="has-text-grey-lighter is-size-7">
+                  For more informations, promos and newsletters
+                </a>
+              </p>
+              <div class="field is-grouped">
+                <p class="control is-expanded m-r-5">
+                  <input class="input" type="text" placeholder="Your email address">
+                </p>
+                <p class="control">
+                  <a class="button zooka-warning">
+                    <span class="icon is-small">
+                      <i class="fas fa-play"></i>
+                    </span>
+                  </a>
+                </p>
+              </div>
+              <!--/field-->
+              <p class="buttons is-centered">
+                <a class="button">
+                  <span class="icon is-small">
+                    <i class="fas fa-phone fa-rotate-90"></i>
+                  </span>
+                </a>
+                <a class="button">
+                  <span class="icon is-small">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </a>
+                <a class="button">
+                  <span class="icon is-small">
+                    <i class="fab fa-facebook-f"></i>
+                  </span>
+                </a>
+                <a class="button">
+                  <span class="icon is-small">
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                </a>
+              </p>
+            </div><!--/column-->
+ 
+            <hr class="margin-hr">
+            <p class="margin-copyright has-text-centered has-text-white-ter is-size-7">
+              © Copyright 2019 · Zooka Watersports · All rights reserved
+            </p>
+ 
+          </div><!--/columns-->
+        </div><!--/content-->
+      </div><!--/container-->
+    </footer>
+
+
+    <footer class="footer has-background-grey-darker is-hidden-touch is-unselectable">
+      <div class="container">
+        <div class="columns has-text-white-ter">
+          <div class="column is-4">
+            <p>
+              <img class="padding-zoofooter" src="image/footer-logo.png" alt="logo zooka">
+            </p>
+            <p class="margin-about"><b>Since 2010 · 
+              </b>We are commited to providing dive and watersports in Tanjung, Bali. 
+              We focus on the best experience for our customers.</p>
+          </div><!--/column-->
+ 
+          <div class="column is-2 padding-news">
+            <p class="is-size-4">
+              NEWS
+            </p>
+            <p class="bd-footer-link margin-about">
+              <a href="#" class="has-text-white-ter">
+                How it works
+              </a>
+            </p>
+            <p class="bd-footer-link">
+              <a href="{{url('/blog')}}" class="has-text-white-ter">
+                Blog
+              </a>
+            </p>
+          </div><!--/column-->
+ 
+          <div class="column is-3 padding-info">
+            <p class="is-size-4">
+              INFORMATION
+            </p>
+            <p class="bd-footer-link margin-about">
+              <a href="{{url('/#about-us')}}" class="has-text-white-ter">
+                About us
+              </a>
+            </p>
+            <p class="bd-footer-link">
+              <a href="#" class="has-text-white-ter">
+                Term and conditions
+              </a>
+            </p>
+            <p class="bd-footer-link">
+              <a href="#" class="has-text-white-ter">
+                Privacy policy
+              </a>
+            </p>
+          </div><!--/column-->
+ 
+          <div class="column is-3">
+            <p class="is-size-4">
+              SUBSCRIBE NOW
+            </p>
+            <p class="bd-footer-link margin-about">
+              <a href="#" class="has-text-white-ter is-size-7">
+                For more informations, promos and newsletters
+              </a>
+            </p>
+            <div class="field is-grouped">
+              <p class="control is-expanded m-r-5">
+                <input class="input" type="text" placeholder="Your email address">
+              </p>
+              <p class="control">
+                <a class="button zooka-warning">
+                  <span class="icon is-small">
+                    <i class="fas fa-play"></i>
+                  </span>
+                </a>
+              </p>
+            </div><!--/field-->
+            
+            <p class="buttons is-centered">
+              <a class="button">
+                <span class="icon is-small">
+                  <i class="fas fa-phone fa-rotate-90"></i>
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon is-small">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon is-small">
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon is-small">
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </a>
+            </p><!--/buttons-->
+          </div><!--/column-->
+        </div><!--/columns-->
+        
+        <hr class="margin-hr">
+        <p class="margin-copyright has-text-centered has-text-white-ter is-size-7">
+            © Copyright 2019 · Zooka Watersports · All rights reserved
+        </p>
+      </div>
+      <!--/container-->
+    </footer>
+    <!--/FOOTER-->
+
+  </body>
+</html>

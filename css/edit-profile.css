@@ -1,0 +1,16 @@
+#edit-password{
+  margin-right:10px;
+}
+#add-password{
+  margin-right:10px;
+}
+
+.card-content{
+padding:1rem;
+}
+.card-header-title{
+padding:1rem;
+}
+.columns:last-child{
+margin-bottom:0;
+}
