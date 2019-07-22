@@ -18,7 +18,7 @@
   <link href="./assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
 
   <!-- universal css -->
-    <link rel="stylesheet"  href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/utility.css?alt=media&token=0c57b913-b88f-43f4-a171-fb2d1d924a52">
+  <link rel="stylesheet"  href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/utility.css?alt=media&token=0c57b913-b88f-43f4-a171-fb2d1d924a52">
   <!-- universal css -->
   
   <!-- css -->
@@ -27,77 +27,27 @@
   <!-- css -->
 
   <style>
-.btn-file {
-  position: relative;
-  overflow: hidden;
-  height: 80%:
-}
-.btn-file input[type=file] {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: inherit;
-}
-/*persons */
-
-.quantity {
- display: inline-block; }
-
-.quantity .input-text.qty {
- width: 40px;
- height: 41px;
- padding: 0 5px;
- text-align: center;
- background-color: transparent;
- border: 1px solid #efefef;
-}
-
-.quantity.buttons_added {
- text-align: left;
- position: relative;
- white-space: nowrap;
- vertical-align: top; }
-
-.quantity.buttons_added input {
- display: inline-block;
- margin: 0;
- vertical-align: top;
- box-shadow: none;
-}
-
-.quantity.buttons_added .minus,
-.quantity.buttons_added .plus {
- padding: 7px 15px 8px;
- height: 41px;
- background-color: #ffffff;
- border: 1px solid #efefef;
- cursor:pointer;}
-
-.quantity.buttons_added .minus {
- border-right: 0; }
-
-.quantity.buttons_added .plus {
- border-left: 0; }
-
-.quantity.buttons_added .minus:hover,
-.quantity.buttons_added .plus:hover {
- background: #eeeeee; }
-
-.quantity input::-webkit-outer-spin-button,
-.quantity input::-webkit-inner-spin-button {
- -webkit-appearance: none;
- -moz-appearance: none;
- margin: 0; }
-
- .quantity.buttons_added .minus:focus,
-.quantity.buttons_added .plus:focus {
- outline: none; }
+    .btn-file {
+      position: relative;
+      overflow: hidden;
+      height: 80%:
+    }
+    .btn-file input[type=file] {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: inherit;
+    }
+    .upload-img {
+      width: 128px;
+      height: 128px;
+    }
   </style>
 </head>
 
@@ -294,235 +244,252 @@
                 <form>
                   <div class="row">
                     <div class="col-xl-3 col-lg-6 text-center">
-                      <div class="card">
-                       <img class="card-img-top" src="" alt="Card image cap" style="height: 150px;">
-                      </div><!--/card-->
-                      <div class="btn-file btn btn-light btn-lg m-t-4" style="line-height: 5px;">
-                        <span>
-                          <i class="fas fa-file-image"></i> Upload
-                        </span>
-                        <input type="file">
-                      </div><!--/file-->
-                    </div><!--/col-->
+                      <div class="card m-l-r-auto upload-img">
+                       <img id="image-preview" class="card-img-top img-fit upload-img p-t-4 p-r-4 p-b-4 p-l-4" src="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/images%2Fweb-logo-thumbnails.png?alt=media&token=a9ab7de1-79d8-4a27-8392-b4d0a478cf1c&fbclid=IwAR37pe_VuW5pQXHp8g0deSDth6JwKwWTIYsbjhZbY2x57wMZ6DRYeAl23Lo" alt="Card image cap">
+                     </div><!--/card-->
+                     <div class="btn-file btn btn-light btn-lg m-t-4" style="line-height: 5px;">
+                      <span>
+                        <i class="fas fa-file-image"></i> Upload
+                      </span>
+                      <input type="file" id="file-input">
+                    </div><!--/file-->
+                  </div><!--/col-->
 
-                    <div class="col-xl-3 col-lg-6 text-center">
-                      <div class="card">
-                       <img class="card-img-top" src="" alt="Card image cap" style="height: 150px;">
-                      </div><!--/card-->
-                      <div class="btn-file btn btn-light btn-lg m-t-4" style="line-height: 5px;">
-                        <span>
-                          <i class="fas fa-file-image"></i> Upload
-                        </span>
-                        <input type="file">
-                      </div><!--/file-->
-                    </div><!--/col-->
+                  <div class="col-xl-3 col-lg-6 text-center">
+                    <div class="card">
+                     <img class="card-img-top" src="" alt="Card image cap" style="height: 150px;">
+                   </div><!--/card-->
+                   <div class="btn-file btn btn-light btn-lg m-t-4" style="line-height: 5px;">
+                    <span>
+                      <i class="fas fa-file-image"></i> Upload
+                    </span>
+                    <input type="file">
+                  </div><!--/file-->
+                </div><!--/col-->
 
-                    <div class="col-xl-3 col-lg-6 text-center">
-                      <div class="card">
-                       <img class="card-img-top" src="" alt="Card image cap" style="height: 150px;">
-                      </div><!--/card-->
-                      <div class="btn-file btn btn-light btn-lg m-t-4" style="line-height: 5px;">
-                        <span>
-                          <i class="fas fa-file-image"></i> Upload
-                        </span>
-                        <input type="file">
-                      </div><!--/file-->
-                    </div><!--/col-->
-                    
-                    <div class="col-xl-3 col-lg-6 text-center">
-                      <div class="card">
-                       <img class="card-img-top" src="" alt="Card image cap" style="height: 150px;">
-                      </div><!--/card-->
-                      <div class="btn-file btn btn-light btn-lg m-t-4" style="line-height: 5px;">
-                        <span>
-                          <i class="fas fa-file-image"></i> Upload
-                        </span>
-                        <input type="file">
-                      </div><!--/file-->
-                    </div><!--/col-->
+                <div class="col-xl-3 col-lg-6 text-center">
+                  <div class="card">
+                   <img class="card-img-top" src="" alt="Card image cap" style="height: 150px;">
+                 </div><!--/card-->
+                 <div class="btn-file btn btn-light btn-lg m-t-4" style="line-height: 5px;">
+                  <span>
+                    <i class="fas fa-file-image"></i> Upload
+                  </span>
+                  <input type="file">
+                </div><!--/file-->
+              </div><!--/col-->
+              
+              <div class="col-xl-3 col-lg-6 text-center">
+                <div class="card">
+                 <img class="card-img-top" src="" alt="Card image cap" style="height: 150px;">
+               </div><!--/card-->
+               <div class="btn-file btn btn-light btn-lg m-t-4" style="line-height: 5px;">
+                <span>
+                  <i class="fas fa-file-image"></i> Upload
+                </span>
+                <input type="file">
+              </div><!--/file-->
+            </div><!--/col-->
 
-                  </div><!--/row-->
-                  <div class="form-group" style="margin-top: 20px;">
-                    <label for="formGroupExampleInput">Name Product</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                  </div><!--/form-group-->
-                  <label>Duration</label>
-                  <div class="form-group">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select duration
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">5 Minutes</a>
-                        <a class="dropdown-item" href="#">15 Minutes</a>
-                        <a class="dropdown-item" href="#">30 Minutes</a>
-                        <a class="dropdown-item" href="#">1 Hour</a>
-                        <a class="dropdown-item" href="#">2 Around</a>
-                      </div><!--/dropdown-menu-->
-                    </div><!--/dropdown-->
-                  </div><!--/form-group-->
-                  <label>Category</label>
-                  <div class="form-group">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select category
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Watersports</a>
-                        <a class="dropdown-item" href="#">Underwater</a>
-                        <a class="dropdown-item" href="#">Packages</a>
-                      </div><!--/dropdown-menu-->
-                    </div><!--/dropdown-->
-                  </div><!--/form-group-->
-                </form>
-              </div><!--/card-body-->
-            </div><!--/card-->
-
-
-
-          </div>
-        </div>
-      </div><!--/row-->
-      
-      <div class="row m-t-20">
-        <div class="col-xl-12 mb-12 mb-xl-12">
-          <div class="card shadow">
-            <div class="card-header border-0">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3 class="mb-0">Price Product</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-body">
-                <!-- Add Item -->
-                <form>
-                  <label>Price</label>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" style="color: #fff; background-color: #adb5bd;">IDR</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                  </div><!--/input-group-->
-
-                  <label>Min Persons</label>
-                  <div class="form-group">
-                     <div class="quantity buttons_added">
-                       <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                     </div>
-                  </div><!--/form-group-->
-                </form>
-              </div><!--/card-body-->
-            </div><!--/card-->
-
-
-
-          </div>
-        </div>
-      </div><!--/row-->
-
-
-      <div class="row m-t-20">
-        <div class="col-xl-12 mb-12 mb-xl-12">
-          <div class="card shadow">
-            <div class="card-header border-0">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3 class="mb-0">Description Product</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-body">
-                <!-- Add Item -->
-                <form>
-                  <div class="form-group">
-                    <label for="formGroupExampleInput">Included</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                  </div><!--/form-group-->
-                  
-                  <div class="form-group">
-                    <label for="formGroupExampleInput">Minimum Booking</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                  </div><!--/form-group-->
-
-                  <div class="form-group">
-                    <label for="formGroupExampleInput">Free pickup and return area South Bali</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                  </div><!--/form-group-->
-
-                  <label>Additional Information</label>
-                  <div class="form-group">
-                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div><!--/form-group-->
-                </form>
-              </div><!--/card-body-->
-            </div><!--/card-->
-
-
-
-          </div>
-        </div>
-      </div><!--/row-->
-      <button type="submit" class="btn btn-danger m-t-10">Save Product</button>
-
-      <form class="m-t-10">
-        <div class="form-group">
+          </div><!--/row-->
+          <div class="form-group" style="margin-top: 20px;">
+            <label for="formGroupExampleInput">Name Product</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+          </div><!--/form-group-->
+          <label>Duration</label>
+          <div class="form-group">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select duration
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">5 Minutes</a>
+                <a class="dropdown-item" href="#">15 Minutes</a>
+                <a class="dropdown-item" href="#">30 Minutes</a>
+                <a class="dropdown-item" href="#">1 Hour</a>
+                <a class="dropdown-item" href="#">2 Around</a>
+              </div><!--/dropdown-menu-->
+            </div><!--/dropdown-->
+          </div><!--/form-group-->
           <label>Category</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-        </div><!--/form-group-->
-        <button type="submit" class="btn btn-success m-t-10">Save Categories</button>
-      </form>
+          <div class="form-group">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select category
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Watersports</a>
+                <a class="dropdown-item" href="#">Underwater</a>
+                <a class="dropdown-item" href="#">Packages</a>
+              </div><!--/dropdown-menu-->
+            </div><!--/dropdown-->
+          </div><!--/form-group-->
+        </form>
+      </div><!--/card-body-->
+    </div><!--/card-->
 
 
 
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="row align-items-center justify-content-xl-between">
-          <div class="col-xl-6">
-            <div class="copyright text-center text-xl-left text-muted">
-              &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-              <li class="nav-item">
-                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-              </li>
-            </ul>
+  </div>
+</div>
+</div><!--/row-->
+
+<div class="row m-t-20">
+  <div class="col-xl-12 mb-12 mb-xl-12">
+    <div class="card shadow">
+      <div class="card-header border-0">
+        <div class="row align-items-center">
+          <div class="col">
+            <h3 class="mb-0">Price Product</h3>
           </div>
         </div>
-      </footer>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <!-- Add Item -->
+          <form>
+            <label>Price</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" style="color: #fff; background-color: #adb5bd;">IDR</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            </div><!--/input-group-->
+
+            <label>Min Persons</label>
+            <div class="form-group">
+             <div class="quantity buttons_added">
+               <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+             </div>
+           </div><!--/form-group-->
+         </form>
+       </div><!--/card-body-->
+     </div><!--/card-->
+
+
+
+   </div>
+ </div>
+</div><!--/row-->
+
+
+<div class="row m-t-20">
+  <div class="col-xl-12 mb-12 mb-xl-12">
+    <div class="card shadow">
+      <div class="card-header border-0">
+        <div class="row align-items-center">
+          <div class="col">
+            <h3 class="mb-0">Description Product</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <!-- Add Item -->
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Included</label>
+              <input type="text" class="form-control" id="formGroupExampleInput">
+            </div><!--/form-group-->
+            
+            <div class="form-group">
+              <label for="formGroupExampleInput">Minimum Booking</label>
+              <input type="text" class="form-control" id="formGroupExampleInput">
+            </div><!--/form-group-->
+
+            <div class="form-group">
+              <label for="formGroupExampleInput">Free pickup and return area South Bali</label>
+              <input type="text" class="form-control" id="formGroupExampleInput">
+            </div><!--/form-group-->
+
+            <label>Additional Information</label>
+            <div class="form-group">
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+           </div><!--/form-group-->
+         </form>
+       </div><!--/card-body-->
+     </div><!--/card-->
+
+
+
+   </div>
+ </div>
+</div><!--/row-->
+<button type="submit" class="btn btn-danger m-t-10">Save Product</button>
+
+<form class="m-t-10">
+  <div class="form-group">
+    <label>Category</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+  </div><!--/form-group-->
+  <button type="submit" class="btn btn-success m-t-10">Save Categories</button>
+</form>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="row align-items-center justify-content-xl-between">
+    <div class="col-xl-6">
+      <div class="copyright text-center text-xl-left text-muted">
+        &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+        <li class="nav-item">
+          <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+        </li>
+      </ul>
     </div>
   </div>
-  <!--   Core   -->
-  <script src="./assets/js/plugins/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <!--   Optional JS   -->
-  <script src="./assets/js/plugins/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
-  <!--   Argon JS   -->
-  <script src="./assets/js/argon-dashboard.min.js?v=1.1.0"></script>
-  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-  <script>
-    window.TrackJS &&
-      TrackJS.install({
-        token: "ee6fab19c5a04ac1a32a645abde4613a",
-        application: "argon-dashboard-free"
-      });
-  </script>
+</footer>
+</div>
+</div>
+<!--   Core   -->
+<script src="./assets/js/plugins/jquery/dist/jquery.min.js"></script>
+<script src="./assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!--   Optional JS   -->
+<script src="./assets/js/plugins/chart.js/dist/Chart.min.js"></script>
+<script src="./assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
+<!--   Argon JS   -->
+<script src="./assets/js/argon-dashboard.min.js?v=1.1.0"></script>
+<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+<script>
+  window.TrackJS &&
+  TrackJS.install({
+    token: "ee6fab19c5a04ac1a32a645abde4613a",
+    application: "argon-dashboard-free"
+  });
+</script>
+<script>
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        $('#image-preview').attr('src', e.target.result);
+        $('#image-preview').hide();
+        $('#image-preview').fadeIn(650);
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#file-input").change(function() {
+    readURL(this);
+  });
+</script>
 </body>
 
 </html>
