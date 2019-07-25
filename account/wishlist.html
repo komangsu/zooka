@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZOOKA</title>
+  <!-- header & footer use this css -->
+  <link rel="icon" href="image/web-logo-thumbnails.png">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/bulma-badge.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/layouts.css">
+  <!-- header & footer use this css -->
+
+  <!-- universal css -->
+  <link rel="stylesheet" href="css/utility.css">
+  <!-- universal css -->
+
+  <!-- welcome use this css -->
+  <link rel="stylesheet" href="css/welcome.css">
+
+  <!-- product use this css -->
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/price-range.css">
+  <link rel="stylesheet" href="css/star-rating-svg.css">
+  <link rel="stylesheet" href="css/elegant-font/html-css/style.css">
+
+
+  <!-- wishlist use this css -->
+  <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/use-product.css?alt=media&token=6b70e31a-df09-40a7-9a24-b09e47bee521">
+  <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-a456c.appspot.com/o/css%2Fbulma-tooltip.min.css?alt=media&token=1bcff0f4-1c7b-446f-a465-4a54c3931a02">
+  <!-- wishlist use this css -->
+
+  <style>
+    ._m-t-12 {
+      margin-top: -12px;
+    }
+    ._m-l-12 {
+      margin-left: -12px;
+    }
+    .tooltip {
+      border-bottom: 1px dotted black;
+    }
+    @media screen and (max-width: 320px) {
+      ._m-l-12-mobile {
+        margin-left: -12px;
+      }
+      ._m-l-0-mobile {
+        margin-left: 0px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!--/NAVBAR-->
+  <nav class="navbar is-dark is-fixed-top is-unselectable" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-hidden-touch" href="https://bulma.io">
+          <img src="image/zookawatersports.png" alt="logo zooka">
+        </a>
+        <a class="navbar-item is-hidden-desktop" href="#">
+          <img src="image/zooka-thumbnails-light.png" alt="logo zooka">
+        </a>
+
+        <div class="navbar-bell burger is-hidden-desktop">
+          <a href="">
+            <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="3">
+              <i class="fas fa-lg fa-bell"></i>
+            </span>
+          </a>
+        </div>
+        <div class="navbar-cart burger is-hidden-desktop">
+          <a href="">
+            <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="4">
+              <i class="fas fa-lg fa-shopping-cart"></i>
+            </span>
+          </a>
+        </div>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="zooka-navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div><!--/navbar-brand-->
+
+      <div id="zooka-navbar" class="navbar-menu">
+        <div class="navbar-end p-t-0 p-b-0">
+          <a class="navbar-item" href="">
+            Home
+          </a>
+          <a class="navbar-item" href="">
+            All Activities
+          </a>
+          <a class="navbar-item" href="">
+            Blog
+          </a>
+
+          <!--/cart-->
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+            <a class="navbar-link is-arrowless" href="#">
+              <span class="has-badge-rounded has-badge-danger" data-badge="3">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </a>
+
+            <div class="navbar-dropdown is-right is-boxed w-250">
+              <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top">
+                Total: 0 Items
+              </div><!--/navbar-dropdown is-right is-boxed-->
+              <hr class="navbar-divider">
+              <div class="dropdown-content navbar-item is-radiusless is-shadowless is-clipped">
+                <article class="media">
+                  <figure class="media-content">
+                    <p class="image m-l-10 m-t-10 m-r-10 m-b-10">
+                      <img class="img-fit w-full dis-block max-h-240 m-l-r-auto" src="image/zooka-empty.png">
+                    </p>
+                  </figure>
+                </article>
+              </div><!--/dropdown-content-->
+
+            </div><!--/navbar-dropdown-->
+          </div><!--/navbar-item-->
+          <!--/cart-->
+
+          <!--/notification-->
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+            <a class="navbar-link is-arrowless" href="#">
+              <span class="has-badge-rounded has-badge-danger" data-badge="4">
+                <i class="fas fa-bell"></i>
+              </span>
+            </a>
+            <div class="navbar-dropdown is-right is-boxed w-365">
+              <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top dis-inline">
+                <span>Notification</span>
+                <a class="tandai is-pulled-right">Tandai semua &nbsp;&nbsp;</a>
+              </div><!--/dropdown-content-->
+              <hr class="navbar-divider">
+              <div class="has-text-centered">
+                <p class="title has-text-grey-light p-t-20">
+                  <i class="fal fa-bells fa-2x"></i>
+                </p>
+                <p class="subtitle has-text-grey-light p-t-10 p-b-20">No Notification</p>
+              </div><!--/has-text-centered-->
+            </div><!--/navbar-dropdown-->
+          </div><!--/navbar-item-->
+          <!--/notification-->
+
+          <!--/account-->
+          <div class="navbar-item has-dropdown is-right is-hoverable is-hidden-touch">
+            <a class="navbar-link is-arrowless" href="#">
+              <i class="fas fa-lg fa-user"></i>
+            </a>
+            <div class="navbar-dropdown is-right is-boxed">
+              <a href="#" class="navbar-item">Login</a>
+              <a href="#" class="navbar-item">Register</a>
+            </div><!--/navbar-dropdown-->
+          </div><!--/navbar-item-->
+          <!--/account-->
+
+        </div><!--/navbar-end-->
+      </div><!--/navbar-menu-->
+    </div><!--/container-->  
+  </nav>
+  <!--/NAVBAR-->
+
+  <!--wishlist-->
+  <section class="section m-t-48 is-whitesmoke">
+    <div class="container">
+      <div class="columns">
+
+        <aside class="menu is-fullheight is-clipped column is-2 is-narrow-mobile is-whitesmoke">
+
+          <div class="box is-paddingless is-shadowless is-transparent _m-b-8">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                </figure>
+              </div><!--/media-left-->
+              <div class="media-content">
+                <div class="content m-t-10">
+                  <p class="fs-13 p-t-12">
+                    <strong>John Smith</strong> 
+                  </p>
+                </div><!--/content-->
+              </div><!--/media-content-->
+            </article>
+          </div><!--/box--> 
+          <hr class="color-hr">    
+
+          <ul class="menu-list">
+            <li>
+              <a href="">
+                <span class="icon has-text-info">
+                  <i class="fas fa-user-circle fa-orange"></i>
+                </span>
+                <span class="is-active-tabs is-capitalized"> My Account </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon has-text-info">
+                  <i class="fas fa-cart-arrow-down"></i>
+                </span>
+                <span class="is-capitalized"> Orders </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon has-text-info">
+                  <i class="fas fa-comment-dots fa-orange"></i>
+                </span>
+                <span class="is-activ-tabs is-capitalized"> Review </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon has-text-info">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="is-activ-tabs is-capitalized"> Wishlist </span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+
+        <div class="columns container is-mobile">
+          <div class="column">
+            <span class="has-text-weight-bold	is-size-5">Favorite Item <strong class="has-text-eye-of-newt is-size-6 tooltip is-tooltip-right" data-tooltip="only displays items whose stock is still available."> 2 item </strong></span>
+
+            <div class="field is-grouped is-grouped-multiline m-t-20 _m-l-12">
+              <p class="control">
+                <div class="dropdown _m-l-12-mobile _m-l-0-mobile">
+                  <div class="dropdown-trigger">
+                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span>All categories</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div><!--/dropdown-trigger-->
+                  <div class="dropdown-menu _m-t-12" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item">All categories</a>
+                      <a href="#" class="dropdown-item">Watersports</a>
+                      <a href="#" class="dropdown-item">Underwater</a>
+                      <a href="#" class="dropdown-item is-active">Packages</a>
+                    </div>
+                  </div><!--/dropdown-menu-->
+                </div><!--/dropdown-->
+              </p>
+              <p class="control">
+                <div class="field has-addons">
+                  <div class="control">
+                    <button class="button is-static is-small">Sort</button>
+                  </div><!--/control-->
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth is-small">
+                      <select name="country">
+                        <option value="Argentina">Cheapest</option>
+                        <option value="Bolivia">Most expensive</option>
+                        <option value="Brazil">Best seller</option>
+                        <option value="Chile">Big discount</option>
+                        <option value="Colombia">Best rating</option>
+                      </select>
+                    </div><!--/select is-fullwidth-->
+                  </div><!--/control is-expanded-->
+                </div><!--/field-has-addons-->
+              </p>
+            </div><!--/field-->
+
+            <hr class="m-t-15 m-b-0" style="background-color: #ddd;">
+
+            <!-- ITEM -->
+            <div class="columns is-multiline is-mobile m-t-10">
+
+              <div class="column is-half-mobile is-half-tablet is-one-quarter-desktop is-one-fifth-fullhd is-one-quarter-fullhd item-product">
+                <a href="#">
+                  <div class="card hvr-shadow">
+                    <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                      <i class="icon-wishlist wishlisted fas fa-heart"></i>
+                      <figure class="image is-1by1">
+                        <img class="img-fit" src="image/watersports.jpg" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content has-text-centered mtb-15">
+                        <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                        <p class="is-size-7 is-marginless">
+                          <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                          <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                        </p>
+                        <p class="is-size-7 is-marginless">
+                          <span class="rating-product" data-rating="4"></span>
+                        </p>
+                      </div><!--/content-->
+                    </div><!--/card-content-->
+                  </div><!--/card-->
+                </a>
+              </div><!--/column-->
+
+            </div><!--/columns is-multiline-->
+            <!-- ITEM -->
+
+          </div><!--/column-->
+        </div><!--/columns container-->
+
+      </div><!--/columns-->
+    </div><!-- Container -->
+  </section><!--/section-->
+  <!--/wishlist-->
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/seen-notif.js"></script>
+  <script src="js/bulma.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="js/jquery.star-rating-svg.js"></script>
+
+  <script>
+    $(".rating-product").starRating({
+      totalStars: 5,
+      starShape: 'rounded',
+      readOnly: true,
+      starSize: 13,
+      emptyColor: 'lightgray',
+      activeColor: '#CCCC00',
+      useGradient: false
+    });
+  </script>
+  <!--DROPDOWN-->
+  <script>
+    var trigger = document.querySelector(".dropdown-trigger");
+
+    trigger.addEventListener("click", function(event) {
+      document.querySelector(".dropdown").classList.toggle("is-active");
+    });
+  </script>
+  <!--DROPDOWN-->
+</body>
+</html>
