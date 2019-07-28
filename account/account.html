@@ -20,6 +20,15 @@
   <!-- account use this css -->
   <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-a456c.appspot.com/o/account%2Faccount.css?alt=media&token=7f9ab6ff-9f4e-4715-a257-cf187f8daedf">
   <!-- account use this css -->
+<style>
+  .centered-and-cropped {
+  object-fit: cover;
+  }
+  .size-img {
+  width: 120px !important;
+  height: 120px !important;
+  }
+</style>
 </head>
 <body>
 
@@ -212,7 +221,7 @@
                   <!-- USER PROFILE -->
                   <div class="column">
 
-                    <div class="card p-b-17">
+                    <div class="card p-b-25">
                       <header class="card-header">
                         <p class="card-header-title is-size-5">
                           Account details
@@ -264,11 +273,11 @@
                     <div class="card">
                       <div class="card-content has-text-centered _m-b-15">
                         <figure class="image is-128x128 is-inline-block">
-                          <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                          <img id="img-preview" class="is-rounded centered-and-cropped size-img" src="https://bulma.io/images/placeholders/128x128.png">
                         </figure>
                         <div class="file is-small is-centered">
                             <label class="file-label">
-                              <input class="file-input" type="file" name="resume">
+                              <input class="file-input" type="file" accept="image/*" onchange="showMyImage(this)" value="">
                               <span class="file-cta">
                                 <span class="file-icon">
                                   <i class="fas fa-file-image"></i>
@@ -279,11 +288,11 @@
                               </span>
                             </label>
                           </div>
-                          <p class="has-text-grey is-size-7">Image size:   maks. 1 MB</p>
+                          <p class="has-text-grey is-size-7 m-t-12">Image size:   maks. 1 MB</p>
                           <p class="has-text-grey is-size-7">Image format: .JPEG, .PNG</p>
                           <p class="is-size-7 m-t-4">Member since May 31, 2019</p>
                       </div><!--/card-content has-text-centered-->
-                      <div class="card-content has-text-centered has-background-white-bis p-t-0">
+                      <div class="card-content has-text-centered has-background-white-bis p-t-10 p-t-10">
                          <p class="has-text-grey is-size-6">Already Booked</p>
                          <p class="subtitle is-6 has-text-weight-semibold">0 Order</p>
                       </div><!--/card-content-->
@@ -515,6 +524,28 @@
     <!--/container-->
   </footer>
   <!--/FOOTER-->
+
+<script>
+function showMyImage(fileInput) {
+  var files = fileInput.files;
+  for (var i = 0; i < files.length; i++) {
+    var file = files[i];
+    var imageType = /image.*/;
+    if (!file.type.match(imageType)) {
+      continue;
+    }
+    var img = document.getElementById("img-preview");
+    img.file = file;
+    var reader = new FileReader();
+    reader.onload = (function(aImg) {
+      return function(e) {
+        aImg.src = e.target.result;
+      };
+    })(img);
+    reader.readAsDataURL(file);
+  }
+}
+</script>
 
 </body>
 </html>
